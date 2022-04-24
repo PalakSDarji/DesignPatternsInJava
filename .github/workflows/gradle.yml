@@ -7,17 +7,7 @@
 
 name: Java CI with Gradle
 
-on:
-  push:
-    branches:
-    - main
-    - master
-  pull_request:
-    branches:
-    - main
-    - master
-    - psd/*
-    - release/*
+on: [push, pull_request]
 
 permissions:
   contents: read
@@ -35,4 +25,6 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
     - name: Build with Gradle
-      run: ./gradlew build
+      uses: gradle/gradle-build-action@v3
+      with:
+        arguments: build
