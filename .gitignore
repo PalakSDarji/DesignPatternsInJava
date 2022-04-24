@@ -23,3 +23,7 @@
 hs_err_pid*
 /DesignPatternsInJava.iml
 /.idea/
+/gradlew
+/gradlew.bat
+/.gradle/
+/build/
