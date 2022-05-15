@@ -4,7 +4,7 @@ public class EndUser implements Observer{
 
     String name;
 
-    public EndUser(String name, SubjectLibrary subject) {
+    public EndUser(String name, Observable subject) {
         this.name = name;
         subject.subscribeObserver(this);
     }
@@ -18,14 +18,14 @@ public class EndUser implements Observer{
     }
 
     @Override
-    public void update(String avail) {
-        System.out.println( "Hello " + name + "! your book is " + avail);
-    }
-
-    @Override
     public String toString() {
         return "EndUser{" +
                 "name='" + name + '\'' +
                 '}';
+    }
+
+    @Override
+    public <Book> void update(Book book) {
+        System.out.println( "Hello " + name + "! your book is " + book.getInStock());
     }
 }

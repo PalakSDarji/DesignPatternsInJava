@@ -2,7 +2,7 @@ package com.palak.designpatterns.behavioural.observer;
 
 import java.util.ArrayList;
 
-public class Book implements SubjectLibrary{
+public class Book implements Observable {
 
     private String name;
     private String author;
@@ -64,7 +64,7 @@ public class Book implements SubjectLibrary{
                 ", is now "+ this.inStock + ". So, please notify all the users.");
 
         for(Observer o : obList){
-            o.update(this.inStock);
+            o.update(this);
         }
     }
 

@@ -1,6 +1,6 @@
 package com.palak.designpatterns.behavioural.observer;
 
-public interface SubjectLibrary {
+public interface Observable {
 
     public void subscribeObserver(Observer ob);
 
