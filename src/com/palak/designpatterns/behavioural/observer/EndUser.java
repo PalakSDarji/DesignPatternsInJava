@@ -1,6 +1,7 @@
 package com.palak.designpatterns.behavioural.observer;
 
-public class EndUser implements Observer{
+
+public class EndUser implements Observer<Book>{
 
     String name;
 
@@ -25,7 +26,7 @@ public class EndUser implements Observer{
     }
 
     @Override
-    public <Book> void update(Book book) {
+    public void update(Book book) {
         System.out.println( "Hello " + name + "! your book is " + book.getInStock());
     }
 }
