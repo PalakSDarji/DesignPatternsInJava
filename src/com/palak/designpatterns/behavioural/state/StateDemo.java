@@ -5,5 +5,14 @@ public class StateDemo {
 
         Employee emp1 = new Employee("HR");
         emp1.work();
+        emp1.canApproveLeave();
+
+        emp1.setDesignation("Manager");
+        emp1.work();
+        emp1.canApproveLeave();
+
+        emp1.setDesignation("Developer");
+        emp1.work();
+        emp1.canApproveLeave();
     }
 }

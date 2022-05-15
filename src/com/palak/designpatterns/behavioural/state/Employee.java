@@ -7,6 +7,7 @@ public class Employee {
 
     public Employee(String designation) {
         this.designation = designation;
+        setDesignation(designation);
     }
 
     public void work(){
