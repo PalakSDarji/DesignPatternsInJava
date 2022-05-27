@@ -1,4 +1,4 @@
-package com.palak.designpatterns.structural.decorator;
+package com.palak.designpatterns.structural.decorator.demo1;
 
 public class BarbecueBurgerDecorator extends BurgerDecorator{
     public BarbecueBurgerDecorator(Burger burger) {

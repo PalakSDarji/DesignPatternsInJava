@@ -1,4 +1,4 @@
-package com.palak.designpatterns.structural.decorator;
+package com.palak.designpatterns.structural.decorator.demo1;
 
 public class DecoratorDemo {
     public static void main(String[] args) {

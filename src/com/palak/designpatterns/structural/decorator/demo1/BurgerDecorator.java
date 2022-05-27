@@ -1,4 +1,4 @@
-package com.palak.designpatterns.structural.decorator;
+package com.palak.designpatterns.structural.decorator.demo1;
 
 abstract public class BurgerDecorator extends PlainBurger{
     protected Burger burger;
